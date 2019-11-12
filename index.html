@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>tarjetes_flexbox</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            min-height: 100%; 
+        }
+        img{
+            width: 100%;
+        }
+        body{
+            color:purple;
+            font-family: "Georgia" cursive;
+            font-size: 18px;
+            background: linear-gradient(38deg,lightblue,pink);
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            padding: 2em 4em;
+            justify-content: center;
+        }
+        .dissenyador{
+            display:flex;
+            flex-direction: column;
+            width: 25em;
+            margin: 1em;
+            background: rgba(232, 207, 122, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 0 30px black;
+}
+        .dissenyador_img{
+            width: 100%;
+            height: 400px;
+            border-radius: 20px 20px 0 0;
+            background: purple;
+            overflow: hidden;
+        }
+        .dissenyador_img img{
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+            filter:grayscale(100%);
+            mix-blend-mode: lighten;
+        }
+        .dissenyador:first-child .dissenyador_img img{
+            object-position: center;
+        }
+        .dissenyador:last-child .dissenyador_img img{
+            object-position: top;
+        }
+        header{
+            display: flex;
+            margin: 0.5em 1em;
+            justify-content: space-between;
+            border-bottom: 1px solid purple;
+            align-items: baseline;
+        }
+        h3{
+            font-style: italic;
+            font-weight: bold;
+        }
+        span{
+            font-style: normal;
+            font-weight: lighter;
+            font-size: 0.9em;
+        }
+        .dissenyador_contingut{
+            flex-grow: 1em;
+            margin: 1em 1em 0.5em 1em;
+            font-size: 0.9em;
+            line-height: 1.4em;
+            text-align: justify;
+            hyphens: auto;
+        
+        }
+        footer{
+            background: purple;
+            color:rgba(232, 207, 122, 0.9);
+            font-size: 0.9em;
+            font-style: italic;
+            border-radius: 0 0 20px 20px;
+            padding: 0.6em;
+        }
+        @media (max-width:600px){
+            .body{
+                font-size: 16px;
+            }
+            .container{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+   <div class="container"> 
+       <div class="dissenyador">
+        <div class="dissenyador_img">
+           <img src="img/alextrochut.jpg" alt="Alex Trochut">
+            </div>
+            <header>
+                <h3>Alex Trochut</h3>
+                <span>1981</span>
+            </header>
+            <p class="dissenyador_contingut">
+                Alex Trochut (Barcelona, 1981) es un diseñador gráfico, ilustrador y tipógrafo español. Es nieto del tipógrafo Joan Trochut. Alex Trochut se graduó en Diseño Gráfico en la escuela ELISAVA de Barcelona, comenzando su actividad profesional en Berlín, trabajando en los estudios Moniteurs y Xplicit, para posteriormente regresar a Barcelona y trabajar en el estudio de diseño Toormix a su llegada, y más tarde en el de Vasava, estableciéndose por su propia cuenta en 2007Su obra se caracteriza por la importancia que otorga a la tipografía, convirtiéndola en un elemento de expresión gráfica, así como la variedad y cambios de técnica en cada proyecto, manteniendo en todos ellos como rasgos comunes la fusión entre geometría y formas fluidas. Su obra se ve influida por artistas mediterráneos como Pablo Picasso, Salvador Dalí o Joan Miró, así como por el arte geométrico del húngaro Victor Vasarely. Ha realizado proyectos para Apple, Arctic Monkeys, Nike, The Rolling Stones, Adidas, Coca-Cola, British Airways, Pepsi, Starbucks o The Guardian.
+
+
+              En 2012 desarrolló el proyecto artístico conocido como Binary Prints, resultado de las investigaciones llevadas a cabo en el campo de la dualidad, para el que patentó una técnica que recibe el mismo nombre, mediante la que dos imágenes diferentes podían ser mostradas en una misma superficie, una con luz y otra con oscuridad. A través de dicha técnica, y en colaboración con artistas de música electrónica como James Murphy, John Talabot, Carbou, Damian Lazarus o Acid Pauli, entre otros, ilustró los carteles del festival Sónar en 2013.
+               
+                
+
+                </p>
+                <footer class="dissenyador_peu">
+                   En 2011 publicó el libro titulado More is More en el que se recogen todos los proyectos que ha realizado desde 2006 hasta ese momento. 
+                </footer>
+                </div>
+       <div class="dissenyador">
+                    <div class="dissenyador_img">
+                        <img src="img/dralderete.jpg" alt="dr.alderete">
+                    </div>
+                    <header>
+                        <h3>Jorge Alderete</h3>
+                        <span>1971</span>
+                    </header>
+                    <p class="dissenyador_contingut">
+                        Nacido en la lejana Patagonia argentina en 1971, a los 18 años Jorge Alderete viajó a La Plata, en la provincia de Buenos Aires, para estudiar Diseño en Comunicación Visual en la Facultad de Bellas Artes de la Universidad Nacional de La Plata.
+
+Su trabajo ha sido publicado en varias antologías especializadas entre las que destacan Illustration Now! y Latin American Graphic Design (Taschen);  y su obra ha sido expuesta en distintas galerías y museos del mundo y México, como el Museo de Arte Moderno y el Museo Nacional de las Culturas donde presentó la Exposición Tike’a Rapa Nui, una larga investigación alrededor de la cultura de la Isla de Pascua; investigación recopilada en el libro del mismo nombre publicado en 2018.
+
+En su ya extensa trayectoria como diseñador e ilustrador, ha colaborado también como animador independiente para varias televisoras, entre las que se encuentran MTV, Nickelodeon, Canal Fox y Once TV.
+
+Es fundador, junto a Juan Moragues, del sello discográfico Isotonic Records, especializado en rock instrumental.
+Ha diseñado mas de 150 artes para discos de grupos procedentes de distintas partes del mundo, entre los que se encuentran Los Fabulosos Cadillacs, Andrés Calamaro y Daniel Melero (Argentina).
+
+En 2008 publica su libro Yo soy un don nadie, en la editorial francesa Black Cat Bones, con el que celebra sus primeros diez años en la Ciudad de México. Un año después funda, junto a Clarisa Moura, la Galería Vértigo, un espacio dinámico, enclavado en el corazón de la colonia Roma, que se ha especializado en el diseño y la ilustración.
+
+
+
+                    </p>
+                    <footer class="dissenyador_peu">
+                        Los libros Sonorama y Sonorama Dos (Ed. La Caja de Cerillos) recopilan su trabajo en torno a la música publicados en 2012 y 2018 respectivamente.
+                    </footer>
+                
+       </div>
+       </div>
+</body>
+</html>
